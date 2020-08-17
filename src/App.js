@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import './App.css'
+import Home from './layouts/home/Home'
 
 const App = () => {
-  return <div>Mon Portfolio</div>
+  return (
+    <Fragment>
+      <Home />
+    </Fragment>
+  )
 }
 
 export default App
