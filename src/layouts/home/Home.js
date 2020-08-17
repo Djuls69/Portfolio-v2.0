@@ -1,5 +1,5 @@
 import React from 'react'
-import { makeStyles, Container } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core'
 import CustomButton from '../../components/customButton/CustomButton'
 
 const useStyles = makeStyles(theme => ({
@@ -33,7 +33,7 @@ const Home = () => {
   const classes = useStyles()
   return (
     <section id='home' className={classes.home}>
-      <Container maxWidth='lg'>
+      <div>
         <h6 className={classes.homeSub}>Bonjour, moi c'est</h6>
         <h1 className={classes.homeTitle}>
           Julien Delusseau.
@@ -45,7 +45,7 @@ const Home = () => {
         <a href='mailto:julien.delusseau@gmail.com'>
           <CustomButton />
         </a>
-      </Container>
+      </div>
     </section>
   )
 }
