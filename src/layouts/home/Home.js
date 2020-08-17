@@ -17,10 +17,10 @@ const useStyles = makeStyles(theme => ({
   },
   homeTitle: {
     fontSize: '7rem',
-    color: '#cbf1f5',
+    color: '#eee',
     '& span': {
       display: 'block',
-      color: 'rgba(203, 241, 245, 0.7)'
+      color: 'rgba(255, 255, 255, 0.7)'
     }
   },
   homeContent: {

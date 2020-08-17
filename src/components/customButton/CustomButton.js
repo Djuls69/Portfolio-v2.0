@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
     transition: 'all 0.1s cubic-bezier(.89,.88,.31,.31)',
     '&:hover': {
       backgroundColor: '#3fc1c9',
-      color: '#f5f5f5'
+      color: '#eee'
     }
   }
 }))

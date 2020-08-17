@@ -6,6 +6,7 @@ import SocialMedias from './layouts/socialMedias/SocialMedias'
 import ContactRight from './layouts/contactRight/ContactRight'
 import About from './layouts/about/About'
 import Services from './layouts/services/Services'
+import Portfolio from './layouts/portfolio/Portfolio'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Home />
         <About />
         <Services />
+        <Portfolio />
       </div>
       <ContactRight />
     </Fragment>

@@ -2,20 +2,9 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core'
 import TechList from '../../components/techList/TechList'
 import profilePic from '../../assets/images/profile.jpg'
+import SectionTitle from '../../components/sectionTitle/SectionTitle'
 
 const useStyles = makeStyles(theme => ({
-  sectionTitle: {
-    marginBottom: '5rem',
-    '& h1': {
-      fontSize: '3.2rem',
-      '& span': {
-        marginRight: '1rem',
-        fontSize: '2rem',
-        fontFamily: '"Fira Code", monospace',
-        color: '#3fc1c9'
-      }
-    }
-  },
   aboutContainer: {
     display: 'flex'
   },
@@ -59,11 +48,7 @@ const About = () => {
   const classes = useStyles()
   return (
     <section id='about'>
-      <div className={classes.sectionTitle}>
-        <h1>
-          <span>#1.</span>A propos de moi
-        </h1>
-      </div>
+      <SectionTitle num='1' text='A propos de moi' />
       <div className={classes.aboutContainer}>
         <div className={classes.aboutDescription}>
           <p>Salut, moi c'est Julien, développeur web.</p>
