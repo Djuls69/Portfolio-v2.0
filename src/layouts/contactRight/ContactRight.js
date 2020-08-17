@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core'
 const useStyles = makeStyles(theme => ({
   contactContainer: {
     width: '4rem',
-    position: 'absolute',
+    position: 'fixed',
     right: '4rem',
     bottom: 0,
     display: 'flex',

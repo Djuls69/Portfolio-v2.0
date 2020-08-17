@@ -7,7 +7,7 @@ import { ReactComponent as Twitter } from '../../assets/icons/Icon-twitter.svg'
 const useStyles = makeStyles(theme => ({
   socialMedias: {
     width: '4rem',
-    position: 'absolute',
+    position: 'fixed',
     left: '4rem',
     bottom: 0,
     '&::after': {
@@ -42,13 +42,18 @@ const SocialMedias = () => {
   const classes = useStyles()
   return (
     <div className={classes.socialMedias}>
-      <a className={classes.socialLink} href='#!'>
+      <a className={classes.socialLink} href='https://github.com/Djuls69' target='_blank' rel='noopener noreferrer'>
         <Github className={classes.socialIcon} />
       </a>
-      <a className={classes.socialLink} href='#!'>
+      <a
+        className={classes.socialLink}
+        href='https://www.linkedin.com/in/julien-delusseau-06b795130'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
         <Linkedin className={classes.socialIcon} />
       </a>
-      <a className={classes.socialLink} href='#!'>
+      <a className={classes.socialLink} href='https://twitter.com/Falk3D' target='_blank' rel='noopener noreferrer'>
         <Twitter className={classes.socialIcon} />
       </a>
     </div>
