@@ -5,7 +5,7 @@ import profilePic from '../../assets/images/profile.jpg'
 
 const useStyles = makeStyles(theme => ({
   sectionTitle: {
-    marginBottom: '3rem',
+    marginBottom: '5rem',
     '& h1': {
       fontSize: '3.2rem',
       '& span': {

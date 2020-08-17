@@ -5,6 +5,7 @@ import Header from './layouts/header/Header'
 import SocialMedias from './layouts/socialMedias/SocialMedias'
 import ContactRight from './layouts/contactRight/ContactRight'
 import About from './layouts/about/About'
+import Services from './layouts/services/Services'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <div className='content'>
         <Home />
         <About />
+        <Services />
       </div>
       <ContactRight />
     </Fragment>
