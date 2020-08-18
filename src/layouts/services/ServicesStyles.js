@@ -36,7 +36,11 @@ export const servicesStyles = makeStyles(theme => ({
     },
     [theme.breakpoints.down('sm')]: {
       width: '100%',
-      margin: '0 auto'
+      margin: '0 auto',
+      '& svg': {
+        width: '4rem',
+        height: '4rem'
+      }
     }
   },
   cardIcon: {
@@ -53,6 +57,13 @@ export const servicesStyles = makeStyles(theme => ({
       top: -18,
       left: '50%',
       transform: 'translateX(-50%) rotate(45deg)'
+    },
+    [theme.breakpoints.down('sm')]: {
+      '&::after': {
+        height: '8rem',
+        width: '8rem',
+        top: -0
+      }
     }
   }
 }))

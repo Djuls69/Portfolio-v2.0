@@ -18,8 +18,10 @@ const useStyles = makeStyles(theme => ({
     fontSize: '1.3rem',
     fontFamily: '"Fira Code", monospace',
     transition: 'all 0.1s cubic-bezier(.89,.88,.31,.31)',
-    '&:hover': {
-      color: '#3fc1c9'
+    '& a': {
+      '&:hover': {
+        color: '#3fc1c9'
+      }
     },
     '& span': {
       color: '#3fc1c9'
@@ -35,24 +37,28 @@ const HeaderLinks = ({ drawer, closeDrawer }) => {
 
   return (
     <ul className={!drawer ? classes.headerLinks : classes.headerLinksDrawer}>
-      <li>
-        <a className={classes.headerLink} href='#about' onClick={() => closeDrawer()}>
-          <span>#01.</span> A propos de moi
+      <li className={classes.headerLink}>
+        <span>#01.</span>{' '}
+        <a href='#about' onClick={drawer && closeDrawer}>
+          A propos de moi
         </a>
       </li>
-      <li>
-        <a className={classes.headerLink} href='#services' onClick={() => closeDrawer()}>
-          <span>#02.</span> Services
+      <li className={classes.headerLink}>
+        <span>#02.</span>{' '}
+        <a href='#services' onClick={drawer && closeDrawer}>
+          Services
         </a>
       </li>
-      <li>
-        <a className={classes.headerLink} href='#portfolio' onClick={() => closeDrawer()}>
-          <span>#03.</span> Portfolio
+      <li className={classes.headerLink}>
+        <span>#03.</span>{' '}
+        <a href='#portfolio' onClick={drawer && closeDrawer}>
+          Portfolio
         </a>
       </li>
-      <li>
-        <a className={classes.headerLink} href='#contact' onClick={() => closeDrawer()}>
-          <span>#04.</span> Contact
+      <li className={classes.headerLink}>
+        <span>#04.</span>{' '}
+        <a href='#contact' onClick={drawer && closeDrawer}>
+          Contact
         </a>
       </li>
     </ul>
