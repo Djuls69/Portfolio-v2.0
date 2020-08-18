@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
     width: '5rem',
     height: '5rem',
     fill: '#3fc1c9',
-    marginBottom: '3rem'
+    margin: '3rem 0'
   }
 }))
 

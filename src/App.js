@@ -8,6 +8,7 @@ import About from './layouts/about/About'
 import Services from './layouts/services/Services'
 import Portfolio from './layouts/portfolio/Portfolio'
 import Contact from './layouts/contact/Contact'
+import Footer from './layouts/footer/Footer'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Services />
         <Portfolio />
         <Contact />
+        <Footer />
       </div>
       <ContactRight />
     </Fragment>
