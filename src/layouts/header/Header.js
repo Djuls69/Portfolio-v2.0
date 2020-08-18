@@ -1,14 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles(theme => ({
   header: {
     height: '10rem',
+    backgroundColor: '#222831',
     display: 'flex',
     padding: '0 5rem',
     position: 'sticky',
-    top: 0,
-    zIndex: 100
+    zIndex: 100,
+    transition: 'all 0.3s cubic-bezier(.89,.88,.31,.31)'
   },
   headerLinks: {
     marginLeft: 'auto',
@@ -31,8 +32,22 @@ const useStyles = makeStyles(theme => ({
 
 const Header = () => {
   const classes = useStyles()
+  const [scrollingDown, setScrollingDown] = useState(false)
+
+  useEffect(() => {
+    let lastScroll = window.scrollY
+    window.addEventListener('scroll', () => {
+      if (lastScroll > window.scrollY) {
+        setScrollingDown(false)
+      } else if (lastScroll < window.scrollY) {
+        setScrollingDown(true)
+      }
+      lastScroll = window.scrollY
+    })
+  })
+
   return (
-    <nav className={classes.header}>
+    <nav style={{ top: scrollingDown ? -100 : 0 }} className={classes.header}>
       <ul className={classes.headerLinks}>
         <li>
           <a className={classes.headerLink} href='#about'>
