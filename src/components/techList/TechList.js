@@ -1,26 +1,8 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core'
-
-const useStyles = makeStyles(theme => ({
-  aboutList: {
-    display: 'flex',
-    [theme.breakpoints.down('sm')]: {
-      marginBottom: '3rem'
-    }
-  },
-  aboutListItem: {
-    fontSize: '1.3rem',
-    marginBottom: '1rem',
-    marginRight: '4rem',
-    '& i': {
-      color: '#3fc1c9',
-      marginRight: '1rem'
-    }
-  }
-}))
+import { techListStyles } from './TechListStyles'
 
 const TechList = () => {
-  const classes = useStyles()
+  const classes = techListStyles()
   return (
     <div className={classes.aboutList}>
       <ul>

@@ -15,7 +15,7 @@ const workDB = [
     titre: 'CRWN Clothing',
     img: require('../assets/images/project05.png'),
     description:
-      "Développement d'une e-commerce, à l'aide de React et Redux, utilisant Firebase pour la base de données et l'authentification, intégrant multiples librairies, tels que Stripe pour le paiement en ligne, ou Reselect pour la performance.",
+      "Développement d'une e-commerce, à l'aide de React et Redux, utilisant Firebase pour la base de données et l'authentification, et intégrant multiples librairies.",
     link: 'https://react-crwnclothing-app.herokuapp.com',
     github: 'https://github.com/Djuls69/crwn-clothing'
   },

@@ -86,6 +86,8 @@ export const portfolioItemStyles = makeStyles(theme => ({
   },
   projectTechnos: {
     display: 'flex',
+    flexWrap: 'wrap',
+    width: '100%',
     marginBottom: '2rem',
     fontFamily: '"Fira Code", monospace',
     fontSize: '1.1rem',
