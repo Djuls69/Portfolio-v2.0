@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
       content: '""',
       height: '10rem',
       width: 1,
-      backgroundColor: '#cbf1f5',
+      backgroundColor: '#eee',
       margin: '0 auto'
     }
   },

@@ -39,7 +39,12 @@ const useStyles = makeStyles(theme => ({
       top: '2rem',
       left: '2rem',
       zIndex: -1,
-      borderRadius: 5
+      borderRadius: 5,
+      transition: 'all 0.1s cubic-bezier(.89,.88,.31,.31)'
+    },
+    '&:hover::after': {
+      top: '1rem',
+      left: '1rem'
     }
   }
 }))

@@ -6,6 +6,7 @@ import { ReactComponent as PencilIcon } from '../../assets/icons/Icon-pencil-rul
 import SectionTitle from '../../components/sectionTitle/SectionTitle'
 
 const useStyles = makeStyles(theme => ({
+  services: {},
   servicesContainer: {
     display: 'flex'
   },
@@ -14,7 +15,6 @@ const useStyles = makeStyles(theme => ({
     padding: '3rem 2rem',
     borderRadius: 5,
     height: '100%',
-    backgroundColor: '#393e46',
     transition: 'all 0.1s cubic-bezier(.89,.88,.31,.31)',
     '&:hover': {
       transform: 'translateY(-3px)'
@@ -35,19 +35,37 @@ const useStyles = makeStyles(theme => ({
       fontSize: '1.8rem',
       textAlign: 'left'
     }
+  },
+  cardIcon: {
+    position: 'relative',
+    marginBottom: '5rem',
+    '&::after': {
+      display: 'block',
+      content: '" "',
+      height: '16rem',
+      width: '16rem',
+      border: '2px solid #3fc1c9',
+      borderRadius: '100%',
+      position: 'absolute',
+      top: -18,
+      left: '50%',
+      transform: 'translateX(-50%) rotate(45deg)'
+    }
   }
 }))
 
 const Services = () => {
   const classes = useStyles()
   return (
-    <section id='services'>
+    <section id='services' className={classes.services}>
       <SectionTitle num='2' text='Services' />
       <div className={classes.servicesContainer}>
         <Grid container spacing={3}>
           <Grid item md={12} lg={4}>
             <div className={classes.servicesCard}>
-              <LaptopIcon />
+              <div className={classes.cardIcon}>
+                <LaptopIcon />
+              </div>
               <h1>Web Développement</h1>
               <p>
                 En utilisant HTML, Sass, Javascript et React, je suis passionné par le développement de sites web, tout
@@ -58,7 +76,9 @@ const Services = () => {
           </Grid>
           <Grid item md={12} lg={4}>
             <div className={classes.servicesCard}>
-              <UsersIcon />
+              <div className={classes.cardIcon}>
+                <UsersIcon />
+              </div>
               <h1>Expérience Utilisateur</h1>
               <p>
                 Je ne compte plus le nombre de fois où j'ai essayé d'accomplir une tâche simple sur un site et j'ai fini
@@ -69,7 +89,9 @@ const Services = () => {
           </Grid>
           <Grid item md={12} lg={4}>
             <div className={classes.servicesCard}>
-              <PencilIcon />
+              <div className={classes.cardIcon}>
+                <PencilIcon />
+              </div>
               <h1>Désign Réactif</h1>
               <p>
                 Je m'efforce de développer et de mettre en œuvre des interfaces réactives et esthétiques afin que vos

@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
       content: '""',
       height: '10rem',
       width: 1,
-      backgroundColor: '#cbf1f5',
+      backgroundColor: '#eee',
       margin: '0 auto'
     }
   },
@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
     padding: '1rem',
     height: '3.8rem',
     width: '3.8rem',
-    fill: '#cbf1f5',
+    fill: '#eee',
     transition: 'all 0.1s cubic-bezier(.89,.88,.31,.31)',
     '&:hover': {
       fill: '#3fc1c9',
