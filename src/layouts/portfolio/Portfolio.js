@@ -1,16 +1,15 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core'
 import SectionTitle from '../../components/sectionTitle/SectionTitle'
-
-const useStyles = makeStyles(theme => ({
-  portfolio: {}
-}))
+import workDB from '../../data/workDB'
+import PortfolioItem from '../../components/portfolioItem/PortfolioItem'
 
 const Portfolio = () => {
-  const classes = useStyles()
   return (
-    <section id='portfolio' className={classes.portfolio}>
+    <section id='portfolio'>
       <SectionTitle num='3' text='Quelques projets' />
+      {workDB.map(item => (
+        <PortfolioItem key={item.id} item={item} />
+      ))}
     </section>
   )
 }

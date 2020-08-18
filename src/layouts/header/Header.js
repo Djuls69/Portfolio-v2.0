@@ -7,7 +7,8 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     padding: '0 5rem',
     position: 'sticky',
-    top: 0
+    top: 0,
+    zIndex: 100
   },
   headerLinks: {
     marginLeft: 'auto',
