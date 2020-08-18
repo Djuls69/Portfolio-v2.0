@@ -53,7 +53,7 @@ const About = () => {
   const classes = useStyles()
   return (
     <section id='about'>
-      <SectionTitle num='1' text='A propos de moi' />
+      <SectionTitle num='01' text='A propos de moi' />
       <div className={classes.aboutContainer}>
         <div className={classes.aboutDescription}>
           <p>Salut, moi c'est Julien, développeur web.</p>

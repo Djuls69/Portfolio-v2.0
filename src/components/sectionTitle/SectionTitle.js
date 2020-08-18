@@ -17,10 +17,10 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-const SectionTitle = ({ num, text }) => {
+const SectionTitle = ({ num, text, center }) => {
   const classes = useStyles()
   return (
-    <div className={classes.sectionTitle}>
+    <div style={{ textAlign: center && 'center' }} className={classes.sectionTitle}>
       <h1>
         <span>{`#${num}.`}</span>
         {text}

@@ -6,7 +6,7 @@ import PortfolioItem from '../../components/portfolioItem/PortfolioItem'
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-      <SectionTitle num='3' text='Quelques projets' />
+      <SectionTitle num='03' text='Quelques projets' />
       {workDB.map(item => (
         <PortfolioItem key={item.id} item={item} />
       ))}

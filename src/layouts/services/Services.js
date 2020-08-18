@@ -58,7 +58,7 @@ const Services = () => {
   const classes = useStyles()
   return (
     <section id='services' className={classes.services}>
-      <SectionTitle num='2' text='Services' />
+      <SectionTitle num='02' text='Services' center />
       <div className={classes.servicesContainer}>
         <Grid container spacing={3}>
           <Grid item md={12} lg={4}>

@@ -7,6 +7,7 @@ import ContactRight from './layouts/contactRight/ContactRight'
 import About from './layouts/about/About'
 import Services from './layouts/services/Services'
 import Portfolio from './layouts/portfolio/Portfolio'
+import Contact from './layouts/contact/Contact'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <About />
         <Services />
         <Portfolio />
+        <Contact />
       </div>
       <ContactRight />
     </Fragment>

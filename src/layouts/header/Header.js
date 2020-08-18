@@ -36,22 +36,22 @@ const Header = () => {
       <ul className={classes.headerLinks}>
         <li>
           <a className={classes.headerLink} href='#!'>
-            <span>#1.</span> A propos de moi
+            <span>#01.</span> A propos de moi
           </a>
         </li>
         <li>
           <a className={classes.headerLink} href='#!'>
-            <span>#2.</span> Services
+            <span>#02.</span> Services
           </a>
         </li>
         <li>
           <a className={classes.headerLink} href='#!'>
-            <span>#3.</span> Portfolio
+            <span>#03.</span> Portfolio
           </a>
         </li>
         <li>
           <a className={classes.headerLink} href='#!'>
-            <span>#4.</span> Contact
+            <span>#04.</span> Contact
           </a>
         </li>
       </ul>
