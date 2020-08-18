@@ -17,6 +17,9 @@ const useStyles = makeStyles(theme => ({
       width: 1,
       backgroundColor: '#eee',
       margin: '0 auto'
+    },
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
     }
   },
   socialLink: {

@@ -3,7 +3,10 @@ import { makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles(theme => ({
   aboutList: {
-    display: 'flex'
+    display: 'flex',
+    [theme.breakpoints.down('sm')]: {
+      marginBottom: '3rem'
+    }
   },
   aboutListItem: {
     fontSize: '1.3rem',

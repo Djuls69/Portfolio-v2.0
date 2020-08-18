@@ -21,6 +21,9 @@ const useStyles = makeStyles(theme => ({
     '& span': {
       display: 'block',
       color: 'rgba(255, 255, 255, 0.7)'
+    },
+    [theme.breakpoints.down('md')]: {
+      fontSize: '5rem'
     }
   },
   homeContent: {

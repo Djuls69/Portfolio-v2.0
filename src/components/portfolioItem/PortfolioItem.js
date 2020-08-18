@@ -11,6 +11,10 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'row',
     '&:not(:last-child)': {
       marginBottom: '10rem'
+    },
+    [theme.breakpoints.down('md')]: {
+      width: '80%',
+      margin: '0 auto'
     }
   },
   projectImage: {

@@ -1,61 +1,13 @@
 import React from 'react'
-import { makeStyles, Grid } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 import { ReactComponent as LaptopIcon } from '../../assets/icons/Icon-laptop-code.svg'
 import { ReactComponent as UsersIcon } from '../../assets/icons/Icon-users.svg'
 import { ReactComponent as PencilIcon } from '../../assets/icons/Icon-pencil-ruler.svg'
 import SectionTitle from '../../components/sectionTitle/SectionTitle'
-
-const useStyles = makeStyles(theme => ({
-  services: {},
-  servicesContainer: {
-    display: 'flex'
-  },
-  servicesCard: {
-    textAlign: 'center',
-    padding: '3rem 2rem',
-    borderRadius: 5,
-    height: '100%',
-    transition: 'all 0.1s cubic-bezier(.89,.88,.31,.31)',
-    '&:hover': {
-      transform: 'translateY(-3px)'
-    },
-    '& svg': {
-      fill: '#3fc1c9',
-      margin: '2rem',
-      width: '8rem',
-      height: '8rem'
-    },
-    '& h1': {
-      fontSize: '1.8rem',
-      fontWeight: 300,
-      marginBottom: '3rem',
-      fontFamily: '"Fira Code", monospace'
-    },
-    '& p': {
-      fontSize: '1.8rem',
-      textAlign: 'left'
-    }
-  },
-  cardIcon: {
-    position: 'relative',
-    marginBottom: '5rem',
-    '&::after': {
-      display: 'block',
-      content: '" "',
-      height: '16rem',
-      width: '16rem',
-      border: '2px solid #3fc1c9',
-      borderRadius: '100%',
-      position: 'absolute',
-      top: -18,
-      left: '50%',
-      transform: 'translateX(-50%) rotate(45deg)'
-    }
-  }
-}))
+import { servicesStyles } from './ServicesStyles'
 
 const Services = () => {
-  const classes = useStyles()
+  const classes = servicesStyles()
   return (
     <section id='services' className={classes.services}>
       <SectionTitle num='02' text='Services' center />

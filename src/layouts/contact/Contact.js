@@ -16,6 +16,10 @@ const useStyles = makeStyles(theme => ({
     },
     '& h1': {
       fontSize: '2.8rem'
+    },
+    [theme.breakpoints.down('md')]: {
+      width: '80%',
+      margin: '0 auto'
     }
   },
   contactIcon: {

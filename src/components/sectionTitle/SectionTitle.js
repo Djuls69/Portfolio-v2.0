@@ -13,6 +13,14 @@ const useStyles = makeStyles(theme => ({
         fontFamily: '"Fira Code", monospace',
         color: '#3fc1c9'
       }
+    },
+    [theme.breakpoints.down('sm')]: {
+      '& h1': {
+        fontSize: '2.8rem',
+        '& span': {
+          fontSize: '1.6rem'
+        }
+      }
     }
   }
 }))

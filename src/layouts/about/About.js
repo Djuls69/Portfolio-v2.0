@@ -6,7 +6,10 @@ import SectionTitle from '../../components/sectionTitle/SectionTitle'
 
 const useStyles = makeStyles(theme => ({
   aboutContainer: {
-    display: 'flex'
+    display: 'flex',
+    [theme.breakpoints.down('sm')]: {
+      display: 'block'
+    }
   },
   aboutImage: {
     width: '40%',
@@ -19,6 +22,10 @@ const useStyles = makeStyles(theme => ({
     marginRight: '2rem',
     '& p': {
       marginBottom: '1.5rem'
+    },
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+      minWidth: 'auto'
     }
   },
   profilePic: {
@@ -27,7 +34,11 @@ const useStyles = makeStyles(theme => ({
     '& img': {
       width: '300px',
       height: '300px',
-      borderRadius: 5
+      borderRadius: 5,
+      [theme.breakpoints.down('md')]: {
+        width: '200px',
+        height: '200px'
+      }
     },
     '&::after': {
       display: 'block',
@@ -40,7 +51,11 @@ const useStyles = makeStyles(theme => ({
       left: '2rem',
       zIndex: -1,
       borderRadius: 5,
-      transition: 'all 0.1s cubic-bezier(.89,.88,.31,.31)'
+      transition: 'all 0.1s cubic-bezier(.89,.88,.31,.31)',
+      [theme.breakpoints.down('md')]: {
+        width: '200px',
+        height: '200px'
+      }
     },
     '&:hover::after': {
       top: '1rem',

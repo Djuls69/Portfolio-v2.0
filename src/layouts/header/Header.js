@@ -1,38 +1,44 @@
-import React, { useEffect, useState } from 'react'
-import { makeStyles } from '@material-ui/core'
+import React, { useEffect, useState, Fragment } from 'react'
+import { makeStyles, useMediaQuery, useTheme, Drawer } from '@material-ui/core'
+import MenuIcon from '@material-ui/icons/Menu'
+import HeaderLinks from '../../components/headerLinks/HeaderLinks'
 
 const useStyles = makeStyles(theme => ({
   header: {
     height: '10rem',
     backgroundColor: '#222831',
     display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
     padding: '0 5rem',
     position: 'sticky',
     zIndex: 100,
-    transition: 'all 0.3s cubic-bezier(.89,.88,.31,.31)'
-  },
-  headerLinks: {
-    marginLeft: 'auto',
-    display: 'flex',
-    alignItems: 'center'
-  },
-  headerLink: {
-    marginLeft: '5rem',
-    fontSize: '1.3rem',
-    fontFamily: '"Fira Code", monospace',
-    transition: 'all 0.1s cubic-bezier(.89,.88,.31,.31)',
-    '&:hover': {
-      color: '#3fc1c9'
-    },
-    '& span': {
-      color: '#3fc1c9'
+    transition: 'all 0.3s cubic-bezier(.89,.88,.31,.31)',
+    [theme.breakpoints.down('sm')]: {
+      padding: '0 2rem',
+      height: '5rem'
     }
+  },
+  menuIcon: {
+    fill: '#3fc1c9',
+    width: '3rem',
+    height: '3rem',
+    zIndex: 100
+  },
+  drawer: {
+    backgroundColor: '#393e46',
+    color: '#ccc',
+    width: '60%',
+    padding: '2rem'
   }
 }))
 
 const Header = () => {
   const classes = useStyles()
   const [scrollingDown, setScrollingDown] = useState(false)
+  const [openDrawer, setOpenDrawer] = useState(false)
+  const theme = useTheme()
+  const matches = useMediaQuery(theme.breakpoints.down('sm'))
 
   useEffect(() => {
     let lastScroll = window.scrollY
@@ -46,30 +52,27 @@ const Header = () => {
     })
   })
 
+  const closeDrawer = () => {
+    setOpenDrawer(false)
+  }
+
   return (
     <nav style={{ top: scrollingDown ? -100 : 0 }} className={classes.header}>
-      <ul className={classes.headerLinks}>
-        <li>
-          <a className={classes.headerLink} href='#about'>
-            <span>#01.</span> A propos de moi
-          </a>
-        </li>
-        <li>
-          <a className={classes.headerLink} href='#services'>
-            <span>#02.</span> Services
-          </a>
-        </li>
-        <li>
-          <a className={classes.headerLink} href='#portfolio'>
-            <span>#03.</span> Portfolio
-          </a>
-        </li>
-        <li>
-          <a className={classes.headerLink} href='#contact'>
-            <span>#04.</span> Contact
-          </a>
-        </li>
-      </ul>
+      {matches ? (
+        <Fragment>
+          <MenuIcon onClick={() => setOpenDrawer(!openDrawer)} className={classes.menuIcon} />
+          <Drawer
+            classes={{ paper: classes.drawer }}
+            anchor='right'
+            open={openDrawer}
+            onClose={() => setOpenDrawer(false)}
+          >
+            <HeaderLinks drawer closeDrawer={closeDrawer} />
+          </Drawer>
+        </Fragment>
+      ) : (
+        <HeaderLinks />
+      )}
     </nav>
   )
 }
