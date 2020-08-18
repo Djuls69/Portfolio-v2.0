@@ -23,7 +23,7 @@ const CustomButton = ({ text, ...otherProps }) => {
   const classes = useStyles()
   return (
     <button className={classes.customBtn} {...otherProps}>
-      Me Contacter
+      {text}
     </button>
   )
 }

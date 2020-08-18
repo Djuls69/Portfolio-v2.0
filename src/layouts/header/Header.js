@@ -35,22 +35,22 @@ const Header = () => {
     <nav className={classes.header}>
       <ul className={classes.headerLinks}>
         <li>
-          <a className={classes.headerLink} href='#!'>
+          <a className={classes.headerLink} href='#about'>
             <span>#01.</span> A propos de moi
           </a>
         </li>
         <li>
-          <a className={classes.headerLink} href='#!'>
+          <a className={classes.headerLink} href='#services'>
             <span>#02.</span> Services
           </a>
         </li>
         <li>
-          <a className={classes.headerLink} href='#!'>
+          <a className={classes.headerLink} href='#portfolio'>
             <span>#03.</span> Portfolio
           </a>
         </li>
         <li>
-          <a className={classes.headerLink} href='#!'>
+          <a className={classes.headerLink} href='#contact'>
             <span>#04.</span> Contact
           </a>
         </li>

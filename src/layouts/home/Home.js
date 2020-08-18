@@ -43,7 +43,7 @@ const Home = () => {
           Je suis un développeur web spécialisé dans le développement de sites et applications.
         </p>
         <a href='mailto:julien.delusseau@gmail.com'>
-          <CustomButton />
+          <CustomButton text='Me Contacter' />
         </a>
       </div>
     </section>
