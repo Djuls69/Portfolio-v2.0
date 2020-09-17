@@ -1,5 +1,16 @@
 const workDB = [
   {
+    id: 6,
+    compétences: 'fullstack',
+    tags: ['HTML', 'JSS', 'React', 'Redux', 'Node', 'MongoDB'],
+    titre: 'Netflix Clone',
+    img: require('../assets/images/project09.jpg'),
+    description:
+      'Clone du célèbre site Netflix. Vous pouvez vous identifier, créer des profils, et regarder les trailers que vous désirez.',
+    link: 'https://secure-citadel-47094.herokuapp.com',
+    github: 'https://github.com/Djuls69/netflix-clone'
+  },
+  {
     id: 5,
     compétences: 'fullstack',
     tags: ['HTML', 'JSS', 'React', 'Redux', 'Node', 'MongoDB'],
