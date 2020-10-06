@@ -3,7 +3,7 @@ const workDB = [
     id: 6,
     compétences: 'fullstack',
     tags: ['HTML', 'JSS', 'React', 'Redux', 'Node', 'MongoDB'],
-    titre: 'Events',
+    titre: 'Emaily',
     img: require('../assets/images/project09.jpg'),
     description:
       "Emaily est une application simple, qui vous permet d'envoyer à vos utilisateur un email, une enquête de satisfaction, et d'enregistrer son opinion. Afin de créer une enquête, vous devez au préalable vous identifier avec Google, puis ajouter du crédit avec Stripe.",
