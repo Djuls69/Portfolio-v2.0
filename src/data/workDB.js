@@ -17,7 +17,7 @@ const workDB = [
     titre: 'Events',
     img: require('../assets/images/project08.jpg'),
     description:
-      'Le but de cette application est de créer des évenements. Vous pouvez vous inscrire, créer vos évenements, ajouter des commentaires, ou participer aux évenements crées par les autres utilisateurs.',
+      'Le but de cette application est de créer des évènements. Vous pouvez vous inscrire, créer vos évènements, ajouter des commentaires, ou participer aux évènements crées par les autres utilisateurs.',
     link: 'https://hidden-plains-27480.herokuapp.com',
     github: 'https://github.com/Djuls69/mern-events'
   },

@@ -17,8 +17,12 @@ const Contact = () => {
           <br />
           Je ferai de mon mieux pour vous répondre dans les plus brefs délais.
         </p>
-        <a href='mailto:julien.delusseau@gmail.com'>
-          <CustomButton text='Dites Bonjour' />
+        <a
+          href='https://drive.google.com/file/d/1v44e5bvTmKejOLq1SYFSmln5lwqic5tJ/view?usp=sharing'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <CustomButton text='TELECHARGER MON CV' />
         </a>
       </div>
     </section>

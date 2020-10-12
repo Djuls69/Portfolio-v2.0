@@ -48,8 +48,12 @@ const Home = () => {
         <p className={classes.homeContent}>
           Je suis un développeur web spécialisé dans le développement de sites et applications.
         </p>
-        <a href='mailto:julien.delusseau@gmail.com'>
-          <CustomButton text='Me Contacter' />
+        <a
+          href='https://drive.google.com/file/d/1v44e5bvTmKejOLq1SYFSmln5lwqic5tJ/view?usp=sharing'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <CustomButton text='TELECHARGER MON CV' />
         </a>
       </div>
     </section>
