@@ -51,12 +51,18 @@ const HeaderLinks = ({ drawer, closeDrawer }) => {
       </li>
       <li className={classes.headerLink}>
         <span>#03.</span>{' '}
+        <a href='#experiences' onClick={drawer && closeDrawer}>
+          Expériences
+        </a>
+      </li>
+      <li className={classes.headerLink}>
+        <span>#04.</span>{' '}
         <a href='#portfolio' onClick={drawer && closeDrawer}>
           Portfolio
         </a>
       </li>
       <li className={classes.headerLink}>
-        <span>#04.</span>{' '}
+        <span>#05.</span>{' '}
         <a href='#contact' onClick={drawer && closeDrawer}>
           Contact
         </a>
